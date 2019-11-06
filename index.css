@@ -1,0 +1,13 @@
+.grid-container{
+    background-color: gray;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 40px;
+    min-width: 10%;
+    max-width: 100%;
+    grid-template-columns:5% 25% 10% 45% 15%;
+    grid-template-rows:10% 10% 60% 10% 10%;
+    overflow: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
