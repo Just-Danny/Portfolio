@@ -1,0 +1,74 @@
+.grid-container{
+    background-color: gray;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 40px;
+    min-width: 10%;
+    max-width: 100%;
+    grid-template-columns:5% 25% 20% 45% 5%;
+    grid-template-rows:10% 10% 35% 35% 10% 10%;
+    overflow: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+body{
+background-color:green;
+position: relative;
+animation-name: bg-color;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes bg-color{
+0% {background-color: green;}
+
+25%{background-color:rgb(146, 209, 52);}
+
+50%{background-color: rgb(11, 238, 45);}
+
+75%{background-color: rgb(146,209,52) ;}
+
+100%{background-color: green;}
+}
+
+.box{
+position: relative;
+background-color: gray;
+vertical-align: middle;
+color: black;
+padding: 1.25em;
+font-size: 100%;
+}
+
+.nav-bar{
+grid-column: 1/6;
+grid-row: 1/1;
+background-color: gray;
+box-shadow:white 0px 10px 5px;
+text-align: center;
+}
+
+.article-1{
+grid-column: 4/4;
+grid-row: 3/4;
+background-color: gray;
+box-shadow:white 0px 10px 5px;
+}
+
+.article-2{
+grid-column: 4/4;
+grid-row: 4/5;
+background-color: gray;
+box-shadow:white 0px 10px 5px;
+}
+
+.pic{
+grid-column: 2/2;
+grid-row: 3/5;
+background-color: gray;
+box-shadow:white 0px 10px 5px;
+}
