@@ -47,6 +47,7 @@ animation-timing-function: linear;
 animation-delay: 0s;
 animation-iteration-count:1;
 animation-direction: alternate;
+display: block;
 }
 
 @keyframes boxes{
@@ -59,14 +60,6 @@ animation-direction: alternate;
 75%{opacity: 0.75;}
 
 100%{opacity: 1;}
-}
-
-.nav-bar{
-grid-column: 1/5;
-grid-row: 1/3;
-background-color: gray;
-text-align: center;
-box-shadow:white -10px 10px 35px;
 }
 
 .article-1{
@@ -99,3 +92,74 @@ background-color: gray;
 box-shadow:white -10px 10px 35px;
 border-radius: 1em;
 }
+
+.nav-bar{
+grid-column: 1/5;
+grid-row: 1/3;
+background-color: gray;
+text-align: center;
+box-shadow:white -10px 10px 35px;
+}
+
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    background:black;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+  }
+  
+  li {
+      color: #fff;
+    background: black;
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover,
+  li:focus-within {
+      background:green;
+      cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+      background:black;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }
