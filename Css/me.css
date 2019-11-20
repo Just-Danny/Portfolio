@@ -8,11 +8,10 @@
     grid-template-columns:10% 25% 10% 45% 10%;
     grid-template-rows:15% 10% 30% 30% 15%;
     overflow: auto;
-    margin-top: 20px;
-    margin: 40px;
+    margin-top: 80px;
 }
 
-.body{
+body{
     background-color:green;
     position: relative;
     animation-name: bg-color;
