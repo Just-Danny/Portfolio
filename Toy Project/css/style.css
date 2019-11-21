@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+iframe {
+    float: right;
+}
+
+.navbox {
+    position: fixed;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.border img {
+    border: lightgray solid .10em;
+}
+
+.position {
+    position: absolute;
+}
+
+.luigi {
+    top: 1.7em;
+    left: 11.7em;
+}
+
+.mario {
+    top: 2em;
+    left: 19em;
+}
+
+.glogo {
+    z-index: 1;
+    top: 2em;
+    left: 53.5em;
+}
+
+.nlogo {
+    z-index: 2;
+    top: 6em;
+    left: 57em;
+}
+
+.mushroom {
+    z-index: 3;
+    top: 2.5em;
+    left: 61em;
+}
+
+.button {
+    background-color: #43B9FE;
+    color: white;
+    padding: 16px;
+    font-size: 80%;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+    border: lightgray solid .10em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownlinks {
+    display: none;
+    position: absolute;
+    background-color: #17A9FF;
+    min-width: 160px;
+    font-size: 80%;
+    font-family: 'Permanent Marker', cursive;
+    border: lightgray solid .10em;
+}
+
+.dropdownlinks a {
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdownlinks a:hover { 
+    background-color:#ddd;
+}
+
+.dropdown:hover .dropdownlinks {
+    display: block;
+}
+
+.dropdown:hover .button {
+    background-color: #17A9FF;
+}
+
+.background {
+    background-image: url('../images/retro-background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+

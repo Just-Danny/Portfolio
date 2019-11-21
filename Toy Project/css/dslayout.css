@@ -1,0 +1,100 @@
+
+/* 
+Author: Danny Goodrum
+Date: 9/30/2019
+*/
+
+@font-face{
+    font-family: "forward";
+    src: url("fonts/fff-forward.regular.ttf") format('truetype');
+}
+.grid-container{
+font-family: "forward";
+display: grid;
+grid-gap: 30px;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+background-color:gray;
+overflow: auto;
+min-width: 20%;
+max-width: 100%;
+max-height: 80%;
+min-height: 10%;
+margin-bottom: 60px;
+margin-left: 0px;
+margin-right: 0px;
+padding:5%; }
+
+.box{
+position: relative;
+background-color:black ;
+color:white ;
+border-radius:2.5em;
+padding:1.25em;
+font-size: 100%;
+vertical-align: middle;
+border: white double 15px;
+
+}
+.item-a{
+grid-column-start:1 ;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end:  2;
+text-align: center;
+}
+.item-b{
+    grid-column-start:1 ;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end:  7;
+text-align: center;
+
+}
+
+.item-c{
+
+grid-column-start: 2;
+grid-column-end:8;
+grid-row-start:2;
+grid-row-end:  2;
+text-align: center;
+font-size: 20px;
+}
+
+.item-d{
+grid-column-start:1;
+grid-column-end:8;
+grid-row-start: 7;
+grid-row-end: 8;
+text-align: center;
+font-size: 20px;
+}
+.item-d p{text-align:center;}
+.item-d li{list-style-position: inside;}
+
+
+.item-e{
+grid-column-start: 2;
+grid-column-end: 8;
+grid-row-start: 3;
+grid-row-end: 7;
+text-align: center;
+font-size: 25px;
+}
+
+.item-f{grid-column-start: 1;
+grid-column-end: 8;
+grid-row-start: 2;
+grid-row-end: 1;
+text-align: center;
+font-size: 20px;
+}
+.item-g{grid-column-start: 1;
+grid-column-end: 8;
+grid-row-start: 2;
+grid-row-end: 2;}
+}
+div{visibility: hidden;}
+a:visited{color:purple;}
+a:hover{color:white;}

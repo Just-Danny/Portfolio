@@ -1,0 +1,52 @@
+.header {grid-area: header; border-radius: 5% / 50%; background-color:rgba(255,255,0,0.5);border:black 15px;font-size: 30px}
+    .nav{ grid-area: nav; border-radius: 5% / 50%; background-color:rgba(255,255,0,0.5);border:black 15px;font-size: 30px}
+    .article {grid-area: article; background-color:rgba(255,255,0,0.5);border:black 15px;font-size: 35px}
+    .aside {grid-area: aside; border-radius: 5% / 50%; background-color:rgba(255,255,0,0.5);border:black 15px}
+    .footer {grid-area: footer; border-radius: 5% / 50%; background-color:rgba(255,255,0,0.5);border:black 15px}
+    
+   body{
+    background: linear-gradient(black,green,black);
+   text-align: center;
+   color: white;
+   }
+   ul{ list-style-type:none;
+display: inline;
+margin: 0;
+padding:0;
+overflow: hidden;}
+li{float: left;}
+li > a{display: block;
+padding: 8px;
+background-color:grey}
+li > a:hover{
+    background-color: black}
+}
+   @font-face {
+    font-family:'bodoni';
+    src:
+    url('fonts/BodoniFLF-Roman.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal; 
+   }
+   p{grid-area: p; 
+    background-color:rgba(255,255,0,0.5);
+    border:black 15px;
+    font-size: 35px}
+    body > footer address{
+    font: normal  25px/40px 'bodoni'
+    }
+    nav > {
+    line-height: 20px;
+    list-style: none;
+    padding:"auto"
+    }
+ nav > ul > li > a:visited{
+color: black
+ }
+ 
+ nav > ul > li > a:hover{
+color: white
+ }
+ 
+ h1{ background-color: black;
+color: white}
