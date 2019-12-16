@@ -68,7 +68,7 @@ grid-row: 4/7;
 background-color: gray;
 box-shadow:white -10px 10px 35px;
 border-radius: 1em;
-font-size: 20px;
+font-size: 25px;
 text-align: center;
 padding-top: 3em;
 }
@@ -98,9 +98,11 @@ box-shadow:white -10px 10px 35px;
 border-radius: 1em;
 text-align: center;
 padding-top: 72.145px;
-font-size: 25px;
+font-size: 30px;
 text-shadow:white 10px 10px 5px;
 }
+
+
 
 .nav-bar{
 grid-column: 1/5;
