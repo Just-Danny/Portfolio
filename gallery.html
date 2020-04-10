@@ -2,10 +2,11 @@
 <html>
 <head>
 <title>Gallery</title>
+<script type="text/javascript" src="java/gal.js"></script>
 <link rel="stylesheet" type="text/css"href="Css/gallery.css">
 </head>
 <body class="grid-container">
-        <article class="nav-bar">
+        <article class="box nav-bar">
                 <ul>
                     <li>Projects
                     <ul>
@@ -25,18 +26,23 @@
                     </li>
                     </ul>
             </article>
-<article class="pic1">
-<a href="coding/index.html"><img src="image/coding.png" width="415" height="210"></a>
+<article class="box pic1">
+<a href="coding/index.html"><img src="image/coding.png"></a>
 <br>
 <p>Coding project</p>
-</article>
-
-<article class="pic2">
-<a href="Toy Project/ds.html"><img src="image/ds.png" width="415" height="210"></a>
 <br>
-<p>Childhood toy project</p>
+<button>previous</button><button>next</button>
 </article>
 
+<article class="box pic2">
+<a id="link" href="Toy Project/ds.html"><img src="image/ds.png"></a>
+<br>
+<p id="text">Childhood toy project</p>
+<br>
+<button>previous</button><button>next</button>
+</article>
+
+<!--
 <article class="pic3">
 <a href="Hobbie Project/index.html"><img src="image/Hobbie.png" width="415" height="210"></a>
 <br>
@@ -47,8 +53,12 @@
 <br>
 <p>Arizona Travel Site Project</p>
 </article>
-<article class="middle">Click on the pictures to visit one of my projects</article>
-
+-->
+<article class="box middle">
+        <p>Click on the pictures to visit one of my projects</p> 
+        <br>
+        <p>(Work in progress)</p>
+</article>
 
 </body>
 </html>
