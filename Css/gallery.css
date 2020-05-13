@@ -15,7 +15,7 @@
 body{
     background-color:green;
     position: relative;
-    animation-name: bg-color;
+    /*animation-name: bg-color;*/
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-delay: 3s;
