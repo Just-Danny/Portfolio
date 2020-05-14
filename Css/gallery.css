@@ -1,3 +1,5 @@
+/*Computer*/
+@media only screen and (min-width: 992px) and (orientation:landscape){
 .grid-container{
     background-color:green;
     display: -ms-grid;
@@ -86,22 +88,6 @@ img{
     width: 415px;
 }
 
-/*.pic3{
-grid-column: 2/2;
-grid-row: 5/8;
-background-color: gray;
-box-shadow:white -10px 10px 35px
-}
-
-.pic4{
-grid-column: 4/4;
-grid-row: 5/8;
-background-color: gray;
-box-shadow:white 10px 10px 35px;
-}
-*/
-
-
 
 .middle{
 grid-column: 3/3;
@@ -189,4 +175,764 @@ height: 330px;
                 width: 100%;
                 z-index: 1;
                 }
-        
+            }
+
+            /* Tablet */
+            @media only screen and (max-width:768px) and (min-height:1024px) and (orientation:portrait){
+                .grid-container{
+                    background-color:green;
+                    display: -ms-grid;
+                    display: grid;
+                    grid-gap: 40px;
+                    min-width: 10%;
+                    max-width: 100%;
+                    grid-template-columns:10% 30% 20% 30% 10%;
+                    grid-template-rows:10% 5% 30% 15% 30% 10%;
+                    overflow: auto;
+                    margin-top: 30px;
+                    
+                }
+                
+                body{
+                    background-color:green;
+                    position: relative;
+                    /*animation-name: bg-color;*/
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 3s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    }
+                        
+                    @keyframes bg-color{
+                        0% {background-color: green;}
+                            
+                        25%{background-color:rgb(85, 117, 37);}
+                            
+                        50%{background-color: rgb(9, 70, 18);}
+                            
+                        75%{background-color: rgb(85,117,37) ;}
+                            
+                        100%{background-color: green;}
+                        }
+                    .box{
+                        position: relative;
+                        color: black;
+                        font-size: 100%;
+                        animation-name:boxes;
+                        animation-duration: 5s;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                        animation-iteration-count:1;
+                        animation-direction: alternate;
+                        display: block;
+                        }
+                            
+                        @keyframes boxes{
+                        0% {opacity: 0;}
+                            
+                        25%{ opacity: 0.25;}
+                            
+                        50%{opacity: 0.5;}
+                            
+                        75%{opacity: 0.75;}
+                            
+                        100%{opacity: 1;}
+                        }
+                
+                .pic1, .pic2{
+                font-size: 30px;
+                text-align: center;
+                padding: 0;
+                height: 430px;
+                width: 256px;
+                top: 20%;
+                }
+                
+                .pic1{
+                grid-column: 1/1;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white -10px 10px 35px;
+                }
+                
+                .pic2{
+                grid-column:4/4;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white 10px 10px 35px;
+                
+                }
+                
+                img{
+                    height: 210px;
+                    width: 256px;
+                }
+                
+                
+                .middle{
+                grid-column: 3/3;
+                grid-row: 3/4;
+                background-color: gray;
+                box-shadow:white 0px 10px 20px;
+                font-size: 50px;
+                text-align: center;
+                height: 430px;
+                width: 250px;
+                right: 63%;
+                top: 35%;
+                }
+                        .nav-bar{
+                            grid-column: 2/5;
+                            grid-row: 1/2;
+                            background-color: gray;
+                             box-shadow:white 0px 10px 50px;
+                             padding-top:0px;
+                             text-align: center;
+                             font-size: 30px;
+                             padding-left: 7%;
+                             height: 250px;
+                             margin-right:140px;
+                            }
+                            
+                            a{
+                                text-decoration: none;
+                                }
+                                
+                                ul {
+                                background:black;
+                                list-style: none;
+                                margin: 0;
+                                padding-left: 0;
+                                }
+                                
+                                li {
+                                color: #fff;
+                                background: black;
+                                display: block;
+                                float: left;
+                                padding: 1rem;
+                                position: relative;
+                                text-decoration: none;
+                                transition-duration: 0.5s;
+                                }
+                                  
+                                li a {
+                                  color: #fff;
+                                }
+                                      
+                                li:hover,
+                                li:focus-within {
+                                background:green;
+                                cursor: pointer;
+                                box-shadow:inset white 10px 10px 35px;
+                                color: blue;
+                                }
+                                
+                                li:focus-within a {
+                                outline: none;
+                                color: blue;
+                                }
+                                          
+                                ul li ul {
+                                background:black;
+                                visibility: hidden;
+                                opacity: 0;
+                                min-width: 5rem;
+                                position: absolute;
+                                transition: all 0.5s ease;
+                                margin-top: 1rem;
+                                left: 0;
+                                display: none;
+                                }
+                                
+                                ul li:hover > ul,
+                                ul li:focus-within > ul,
+                                ul li ul:hover,
+                                ul li ul:focus {
+                                visibility: visible;
+                                opacity: 1;
+                                display: block
+                                }
+                                
+                                ul li ul li {
+                                clear: both;
+                                width: 100%;
+                                z-index: 1;
+                                }
+                            button{
+                                width: 90px;
+                            }
+            }
+
+            @media only screen and (max-width:1024px) and (max-height:768px) and (orientation:landscape){
+                .grid-container{
+                    background-color:green;
+                    display: -ms-grid;
+                    display: grid;
+                    grid-gap: 40px;
+                    min-width: 10%;
+                    max-width: 100%;
+                    grid-template-columns:10% 30% 20% 30% 10%;
+                    grid-template-rows:10% 5% 30% 15% 30% 10%;
+                    overflow: auto;
+                    margin-top: 30px;
+                    margin-right: 0;
+                    
+                }
+                
+                body{
+                    background-color:green;
+                    position: relative;
+                    /*animation-name: bg-color;*/
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 3s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    }
+                        
+                    @keyframes bg-color{
+                        0% {background-color: green;}
+                            
+                        25%{background-color:rgb(85, 117, 37);}
+                            
+                        50%{background-color: rgb(9, 70, 18);}
+                            
+                        75%{background-color: rgb(85,117,37) ;}
+                            
+                        100%{background-color: green;}
+                        }
+                    .box{
+                        position: relative;
+                        color: black;
+                        font-size: 100%;
+                        animation-name:boxes;
+                        animation-duration: 5s;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                        animation-iteration-count:1;
+                        animation-direction: alternate;
+                        display: block;
+                        }
+                            
+                        @keyframes boxes{
+                        0% {opacity: 0;}
+                            
+                        25%{ opacity: 0.25;}
+                            
+                        50%{opacity: 0.5;}
+                            
+                        75%{opacity: 0.75;}
+                            
+                        100%{opacity: 1;}
+                        }
+                
+                .pic1, .pic2{
+                font-size: 30px;
+                text-align: center;
+                padding: 0;
+                height: 430px;
+                width: 256px;
+                top: 20%;
+                }
+                
+                .pic1{
+                grid-column: 1/1;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white -10px 10px 35px;
+                left: 5%;
+                }
+                
+                .pic2{
+                grid-column:4/4;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white 10px 10px 35px;
+                }
+                
+                img{
+                    height: 210px;
+                    width: 256px;
+                }
+                
+                
+                .middle{
+                grid-column: 3/3;
+                grid-row: 3/4;
+                background-color: gray;
+                box-shadow:white 0px 10px 20px;
+                font-size: 50px;
+                text-align: center;
+                height: 430px;
+                width: 250px;
+                right: 63%;
+                top: 35%;
+                }
+                        .nav-bar{
+                            grid-column: 2/5;
+                            grid-row: 1/2;
+                            background-color: gray;
+                             box-shadow:white 0px 10px 50px;
+                             padding-top:0px;
+                             text-align: center;
+                             font-size: 30px;
+                             padding-left: 7%;
+                             height: 250px;
+                             margin-right:140px;
+                            }
+                            
+                            a{
+                                text-decoration: none;
+                                }
+                                
+                                ul {
+                                background:black;
+                                list-style: none;
+                                margin: 0;
+                                padding-left: 0;
+                                }
+                                
+                                li {
+                                color: #fff;
+                                background: black;
+                                display: block;
+                                float: left;
+                                padding: 1rem;
+                                position: relative;
+                                text-decoration: none;
+                                transition-duration: 0.5s;
+                                }
+                                  
+                                li a {
+                                  color: #fff;
+                                }
+                                      
+                                li:hover,
+                                li:focus-within {
+                                background:green;
+                                cursor: pointer;
+                                box-shadow:inset white 10px 10px 35px;
+                                color: blue;
+                                }
+                                
+                                li:focus-within a {
+                                outline: none;
+                                color: blue;
+                                }
+                                          
+                                ul li ul {
+                                background:black;
+                                visibility: hidden;
+                                opacity: 0;
+                                min-width: 5rem;
+                                position: absolute;
+                                transition: all 0.5s ease;
+                                margin-top: 1rem;
+                                left: 0;
+                                display: none;
+                                }
+                                
+                                ul li:hover > ul,
+                                ul li:focus-within > ul,
+                                ul li ul:hover,
+                                ul li ul:focus {
+                                visibility: visible;
+                                opacity: 1;
+                                display: block
+                                }
+                                
+                                ul li ul li {
+                                clear: both;
+                                width: 100%;
+                                z-index: 1;
+                                }
+                            button{
+                                width: 100px;
+                                height: 30px;
+                            } 
+            }
+
+            /* phones */
+            @media only screen and (min-width:375px) and (min-height:812px) and (orientation:portrait){
+                .grid-container{
+                    background-color:green;
+                    display: -ms-grid;
+                    display: grid;
+                    grid-gap: 40px;
+                    min-width: 10%;
+                    max-width: 100%;
+                    grid-template-columns:10% 30% 20% 30% 10%;
+                    grid-template-rows:10% 5% 30% 15% 30% 10%;
+                    overflow: auto;
+                    margin-top: 30px;
+                    margin-right: 0;
+                    
+                }
+                
+                body{
+                    background-color:green;
+                    position: relative;
+                    /*animation-name: bg-color;*/
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 3s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    }
+                        
+                    @keyframes bg-color{
+                        0% {background-color: green;}
+                            
+                        25%{background-color:rgb(85, 117, 37);}
+                            
+                        50%{background-color: rgb(9, 70, 18);}
+                            
+                        75%{background-color: rgb(85,117,37) ;}
+                            
+                        100%{background-color: green;}
+                        }
+                    .box{
+                        position: relative;
+                        color: black;
+                        font-size: 100%;
+                        animation-name:boxes;
+                        animation-duration: 5s;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                        animation-iteration-count:1;
+                        animation-direction: alternate;
+                        display: block;
+                        }
+                            
+                        @keyframes boxes{
+                        0% {opacity: 0;}
+                            
+                        25%{ opacity: 0.25;}
+                            
+                        50%{opacity: 0.5;}
+                            
+                        75%{opacity: 0.75;}
+                            
+                        100%{opacity: 1;}
+                        }
+                
+                .pic1, .pic2{
+                font-size: 40px;
+                text-align: center;
+                padding: 0;
+                height: 530px;
+                width: 400px;
+                top: 170%;
+                }
+                
+                .pic1{
+                grid-column: 1/1;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white -10px 10px 35px;
+                left: 5%;
+                }
+                
+                .pic2{
+                grid-column:4/4;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white 10px 10px 35px;
+                right: 50%;
+                }
+                
+                img{
+                    height: 210px;
+                    width: 256px;
+                }
+                
+                
+                .middle{
+                grid-column: 3/3;
+                grid-row: 3/4;
+                background-color: gray;
+                box-shadow:white 0px 10px 20px;
+                font-size: 65px;
+                text-align: center;
+                height: 430px;
+                width: 650px;
+                right: 153%;
+                top: 110%;
+                }
+                        .nav-bar{
+                            grid-column: 2/5;
+                            grid-row: 1/2;
+                            background-color: gray;
+                             box-shadow:white 0px 10px 50px;
+                             padding-top:0px;
+                             text-align: center;
+                             font-size: 41px;
+                             padding-left: 4%;
+                             height: 350px;
+                             margin-right:0;
+                             right: 10%;
+                            }
+                            
+                            a{
+                                text-decoration: none;
+                                }
+                                
+                                ul {
+                                background:black;
+                                list-style: none;
+                                margin: 0;
+                                padding-left: 0;
+                                }
+                                
+                                li {
+                                color: #fff;
+                                background: black;
+                                display: block;
+                                float: left;
+                                padding: 1rem;
+                                position: relative;
+                                text-decoration: none;
+                                transition-duration: 0.5s;
+                                }
+                                  
+                                li a {
+                                  color: #fff;
+                                }
+                                      
+                                li:hover,
+                                li:focus-within {
+                                background:green;
+                                cursor: pointer;
+                                box-shadow:inset white 10px 10px 35px;
+                                color: blue;
+                                }
+                                
+                                li:focus-within a {
+                                outline: none;
+                                color: blue;
+                                }
+                                          
+                                ul li ul {
+                                background:black;
+                                visibility: hidden;
+                                opacity: 0;
+                                min-width: 5rem;
+                                position: absolute;
+                                transition: all 0.5s ease;
+                                margin-top: 1rem;
+                                left: 0;
+                                display: none;
+                                }
+                                
+                                ul li:hover > ul,
+                                ul li:focus-within > ul,
+                                ul li ul:hover,
+                                ul li ul:focus {
+                                visibility: visible;
+                                opacity: 1;
+                                display: block
+                                }
+                                
+                                ul li ul li {
+                                clear: both;
+                                width: 100%;
+                                z-index: 1;
+                                }
+                            button{
+                                width: 100px;
+                                height: 60px;
+                            } 
+            }
+
+            @media only screen and (max-height:400px) and (max-width:812px) and (orientation:landscape){
+                .grid-container{
+                    background-color:green;
+                    display: -ms-grid;
+                    display: grid;
+                    grid-gap: 20px;
+                    min-width: 10%;
+                    max-width: 100%;
+                    grid-template-columns:10% 30% 20% 30% 10%;
+                    grid-template-rows:10% 5% 30% 15% 30% 10%;
+                    overflow: auto;
+                    margin-top: 30px;
+                    margin-right: 0;
+                    
+                }
+                
+                body{
+                    background-color:green;
+                    position: relative;
+                    /*animation-name: bg-color;*/
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 3s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    }
+                        
+                    @keyframes bg-color{
+                        0% {background-color: green;}
+                            
+                        25%{background-color:rgb(85, 117, 37);}
+                            
+                        50%{background-color: rgb(9, 70, 18);}
+                            
+                        75%{background-color: rgb(85,117,37) ;}
+                            
+                        100%{background-color: green;}
+                        }
+                    .box{
+                        position: relative;
+                        color: black;
+                        font-size: 100%;
+                        animation-name:boxes;
+                        animation-duration: 5s;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                        animation-iteration-count:1;
+                        animation-direction: alternate;
+                        display: block;
+                        }
+                            
+                        @keyframes boxes{
+                        0% {opacity: 0;}
+                            
+                        25%{ opacity: 0.25;}
+                            
+                        50%{opacity: 0.5;}
+                            
+                        75%{opacity: 0.75;}
+                            
+                        100%{opacity: 1;}
+                        }
+                
+                .pic1, .pic2{
+                font-size: 40px;
+                text-align: center;
+                padding: 0;
+                height: 530px;
+                width: 400px;
+                top: 170%;
+                }
+                
+                .pic1{
+                grid-column: 1/1;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white -10px 10px 35px;
+                left: 5%;
+                }
+                
+                .pic2{
+                grid-column:4/4;
+                grid-row: 3/5;
+                background-color: gray;
+                box-shadow:white 10px 10px 35px;
+                right: 50%;
+                }
+                
+                img{
+                    height: 210px;
+                    width: 256px;
+                }
+                
+                
+                .middle{
+                grid-column: 3/3;
+                grid-row: 3/4;
+                background-color: gray;
+                box-shadow:white 0px 10px 20px;
+                font-size: 65px;
+                text-align: center;
+                height: 430px;
+                width: 650px;
+                right: 153%;
+                top: 110%;
+                }
+                        .nav-bar{
+                            grid-column: 2/5;
+                            grid-row: 1/2;
+                            background-color: gray;
+                             box-shadow:white 0px 10px 50px;
+                             padding-top:0px;
+                             text-align: center;
+                             font-size: 41px;
+                             padding-left: 4%;
+                             height: 350px;
+                             margin-right:0;
+                             right: 10%;
+                            }
+                            
+                            a{
+                                text-decoration: none;
+                                }
+                                
+                                ul {
+                                background:black;
+                                list-style: none;
+                                margin: 0;
+                                padding-left: 0;
+                                }
+                                
+                                li {
+                                color: #fff;
+                                background: black;
+                                display: block;
+                                float: left;
+                                padding: 1rem;
+                                position: relative;
+                                text-decoration: none;
+                                transition-duration: 0.5s;
+                                }
+                                  
+                                li a {
+                                  color: #fff;
+                                }
+                                      
+                                li:hover,
+                                li:focus-within {
+                                background:green;
+                                cursor: pointer;
+                                box-shadow:inset white 10px 10px 35px;
+                                color: blue;
+                                }
+                                
+                                li:focus-within a {
+                                outline: none;
+                                color: blue;
+                                }
+                                          
+                                ul li ul {
+                                background:black;
+                                visibility: hidden;
+                                opacity: 0;
+                                min-width: 5rem;
+                                position: absolute;
+                                transition: all 0.5s ease;
+                                margin-top: 1rem;
+                                left: 0;
+                                display: none;
+                                }
+                                
+                                ul li:hover > ul,
+                                ul li:focus-within > ul,
+                                ul li ul:hover,
+                                ul li ul:focus {
+                                visibility: visible;
+                                opacity: 1;
+                                display: block
+                                }
+                                
+                                ul li ul li {
+                                clear: both;
+                                width: 100%;
+                                z-index: 1;
+                                }
+                            button{
+                                width: 100px;
+                                height: 30px;
+                            } 
+            }
